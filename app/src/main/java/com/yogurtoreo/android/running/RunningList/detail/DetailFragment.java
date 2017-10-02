@@ -1,31 +1,30 @@
-package com.yogurtoreo.android.running;
+package com.yogurtoreo.android.running.RunningList.detail;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.aigestudio.wheelpicker.WheelPicker;
+import com.yogurtoreo.android.running.R;
+import com.yogurtoreo.android.running.model.SingletonRunningList;
 import com.yogurtoreo.android.running.model.Work;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import butterknife.BindView;
-
 /**
- * Created by admin on 2017/9/13.
+ * @date 创建时间：2017/9/26
+ * @author  Oreooo
+ * @Description
  */
 
 public class DetailFragment extends DialogFragment{
@@ -67,16 +66,14 @@ public class DetailFragment extends DialogFragment{
                 .setPositiveButton("Running", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(getActivity(), "666", Toast.LENGTH_SHORT).show();
-                        RunningLab.getInstance().addWork(mWork);
+                        Toast.makeText(getActivity(), "777", Toast.LENGTH_SHORT).show();
+                        SingletonRunningList.getInstance().addWork(mWork);
                         //mWork = null;
                         //mDate = null;
                     }
                 })
                 .create();
     }
-
-
 
     private void setTimeWheel() {
         List<Integer> data = new ArrayList<>();

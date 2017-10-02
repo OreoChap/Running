@@ -1,18 +1,21 @@
 package com.yogurtoreo.android.running;
 
-import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.yogurtoreo.android.running.RunningList.view.RunningListFragment;
+import com.yogurtoreo.android.running.RunningList.detail.DetailFragment;
 
 import butterknife.BindView;
 
 /**
- * Created by admin on 2017/9/13.
+ * @date 创建时间：2017/9/26
+ * @author  Oreooo
+ * @Description
  */
 
 public class MainActivity extends AppCompatActivity {
@@ -33,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
                     .replace(R.id.fragment_container, newDetail)
                     .commit();
         }
-
     }
 
     @Override

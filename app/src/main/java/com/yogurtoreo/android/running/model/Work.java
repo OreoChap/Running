@@ -4,7 +4,9 @@ import java.util.Date;
 import java.util.UUID;
 
 /**
- * Created by admin on 2017/9/13.
+ * @date 创建时间：2017/9/26
+ * @author  Oreooo
+ * @Description
  */
 
 public class Work {
